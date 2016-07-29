@@ -1,14 +1,14 @@
 {
   "name": "MyDeeal",
   "title": "Deals.",
-  "url": "http://cthadeu.github.io/mydeeal-prototype",
+  "url": "https://github.com/cthadeu/mydeeal.git",
   "author": "Cyro Thadeu",
   "copyright": "2016",
   "version": "1.0.0",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "http://github.com/cthadeu/mydeeal-prototype"
+    "url": "https://github.com/cthadeu/mydeeal.git"
   },
   "devDependencies": {
     "connect-livereload": "^0.5.4",
