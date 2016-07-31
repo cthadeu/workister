@@ -60,21 +60,129 @@
                       <h4 class="text-center">
                           Estou tendo problemas com uma empresa
                       </h4>
-                      <button class="btn btn-lg btn-block btn-profile" >Cliente</button>
+                      <button type="button" data-toggle="modal" data-target="#modalFormClient" class="btn btn-lg btn-block btn-profile" >Cliente</button>
                   </div>
-              </div>
-              <div class="col-md-4">
-                  <div class="profile-subscribe center-block animated flipInX">
-                      <h4 class="text-center">Minha empresa precisa de ajuda em uma conciliação</h4>
-                      <button class="btn btn-lg btn-block btn-profile" >Empresa</button>
+
+                  <div class="modal fade" id="modalFormClient" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                      <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                              <div class="modal-header">
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                  <h3 class="modal-title" id="myModalLabel1">Cliente
+                                      <small class="modal-subtitle"><br/>Registre o seu problema</small>
+                                  </h3>
+                              </div>
+                              <div class="modal-body">
+                                  <form>
+                                      <div class="form-group">
+                                          <label for="clientName">Nome</label>
+                                          <input type="text" class="form-control" id="clientName" placeholder="Nome">
+                                      </div>
+                                      <div class="form-group">
+                                          <label for="clientEmail">Email</label>
+                                          <input type="email" class="form-control" id="clientEmail" placeholder="Email">
+                                      </div>
+                                      <div class="form-group">
+                                          <label for="company">Empresa</label>
+                                          <input type="text" class="form-control" id="company" placeholder="Empresa">
+                                      </div>
+                                      <div class="form-group">
+                                          <label for="problemTextarea">Relate o problema ocorrido</label>
+                                          <textarea rows="3" type="email" class="form-control" id="problemTextarea"></textarea>
+                                      </div>
+                                  </form>
+                              </div>
+                              <div class="modal-footer">
+                                  <button type="button" class="btn btn-modal">Confirmar</button>
+                              </div>
+                          </div>
+                      </div>
                   </div>
 
               </div>
+
+              <div class="col-md-4">
+                  <div class="profile-subscribe center-block animated flipInX">
+                      <h4 class="text-center">Minha empresa precisa de ajuda em uma conciliação</h4>
+                      <button type="button" data-toggle="modal" data-target="#modalFormCompany" class="btn btn-lg btn-block btn-profile">Empresa</button>
+                  </div>
+
+                  <div class="modal fade" id="modalFormCompany" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                      <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                              <div class="modal-header">
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                  <h3 class="modal-title" id="myModalLabel2">Empresa
+                                      <small class="modal-subtitle"><br/>Cadastre sua empresa</small>
+                                  </h3>
+                              </div>
+                              <div class="modal-body">
+                                  <form>
+                                      <div class="form-group">
+                                          <label for="companyName">Razão Social</label>
+                                          <input type="text" class="form-control" id="companyName" placeholder="Razão Social">
+                                      </div>
+                                      <div class="form-group">
+                                          <label for="CNPJ">CNPJ</label>
+                                          <input type="text" class="form-control" id="CNPJ" placeholder="CNPJ">
+                                      </div>
+                                      <div class="form-group">
+                                          <label for="companyEmail">Email</label>
+                                          <input type="email" class="form-control" id="companyEmail" placeholder="Email">
+                                      </div>
+                                      <div class="form-group">
+                                          <label for="companyTelephone">Telefone</label>
+                                          <input type="email" class="form-control" id="companyTelephone" placeholder="Telefone">
+                                      </div>
+                                  </form>
+                              </div>
+                              <div class="modal-footer">
+                                  <button type="button" class="btn btn-modal">Cadastrar</button>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+
+              </div>
+
               <div class="col-md-4">
                   <div class="profile-subscribe center-block animated flipInX">
                       <h4 class="text-center">Quero me tornar um conciliador</h4>
-                      <button class="btn btn-lg btn-block btn-profile" >Conciliador</button>
+                      <button type="button" data-toggle="modal" data-target="#modalFormConciliator" class="btn btn-lg btn-block btn-profile">Conciliador</button>
                   </div>
+
+                  <div class="modal fade" id="modalFormConciliator" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                      <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                              <div class="modal-header">
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                  <h3 class="modal-title" id="myModalLabel3">Conciliador
+                                      <small class="modal-subtitle"><br/>Cadaste-se e seja um conciliador</small>
+                                  </h3>
+                              </div>
+                              <div class="modal-body">
+                                  <form>
+                                      <div class="form-group">
+                                          <label for="concilatorName">Nome</label>
+                                          <input type="text" class="form-control" id="concilatorName" placeholder="Nome">
+                                      </div>
+                                      <div class="form-group">
+                                          <label for="conciliatorCPF">CPF</label>
+                                          <input type="text" class="form-control" id="conciliatorCPF" placeholder="CPF">
+                                      </div>
+                                      <div class="form-group">
+                                          <label for="conciliatorEmail">Email</label>
+                                          <input type="email" class="form-control" id="conciliatorEmail" placeholder="Email">
+                                      </div>
+                                  </form>
+                              </div>
+                              <div class="modal-footer">
+                                  <button type="button" class="btn btn-modal">Cadastrar</button>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+
               </div>
           </div>
       </div>
@@ -121,8 +229,8 @@
             <h1>Contato</h1>
             <form>
                 <div class="form-group">
-                    <label for="exampleInputEmail1">Nome</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                    <label for="exampleInputName">Nome</label>
+                    <input type="email" class="form-control" id="exampleInputName" placeholder="Nome">
                 </div>
                 <div class="form-group">
                     <label for="exampleInputEmail1">Email</label>
@@ -130,9 +238,9 @@
                 </div>
                 <div class="form-group">
                     <label for="textArea">Menssagem</label>
-                    <textarea name="" id="textArea" class="form-control" cols="30" rows="10"></textarea>
+                    <textarea name="" id="textArea" class="form-control" cols="30" rows="8"></textarea>
                 </div>
-                <button type="submit" class="btn btn-default">Submit</button>
+                <button type="submit" class="btn btn-submit">Enviar</button>
             </form>
         </div>
 
