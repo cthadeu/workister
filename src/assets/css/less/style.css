@@ -46,6 +46,7 @@ a {
 }
 .nav-deal {
   padding-top: 20px;
+  padding-bottom: 20px;
   -webkit-transition: background-color 0.9s linear;
   -moz-transition: background-color 0.9s linear;
   -o-transition: background-color 0.9s linear;
@@ -159,7 +160,6 @@ a.navbar-brand {
   margin-top: 20px;
 }
 .content-section .about {
-  background-color: #CCCCCC;
   min-height: 500px;
 }
 .content-section .contact {
@@ -264,7 +264,9 @@ a.navbar-brand {
 }
 form {
   font-family: 'Open Sans Condensed', sans-serif;
-  font-size: 20px;
+}
+form .form-group input {
+  height: 45px;
 }
 form .form-group input,
 form .form-group textarea {
@@ -274,6 +276,7 @@ form .form-group textarea {
   border: none;
   background-color: #f1f1f1;
   font-size: 20px;
+  padding: 10px;
 }
 form .form-group input:focus {
   outline: none !important;

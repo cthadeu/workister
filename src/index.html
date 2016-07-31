@@ -63,7 +63,7 @@
                       <button type="button" data-toggle="modal" data-target="#modalFormClient" class="btn btn-lg btn-block btn-profile" >Cliente</button>
                   </div>
 
-                  <div class="modal fade" id="modalFormClient" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                  <div class="modal wow fadeIn" id="modalFormClient" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                       <div class="modal-dialog" role="document">
                           <div class="modal-content">
                               <div class="modal-header">
@@ -75,15 +75,15 @@
                               <div class="modal-body">
                                   <form>
                                       <div class="form-group">
-                                          <label for="clientName">Nome</label>
+                                          <label for="clientName">Informe seu Nome</label>
                                           <input type="text" class="form-control" id="clientName" placeholder="Nome">
                                       </div>
                                       <div class="form-group">
-                                          <label for="clientEmail">Email</label>
+                                          <label for="clientEmail">Informe seu Email</label>
                                           <input type="email" class="form-control" id="clientEmail" placeholder="Email">
                                       </div>
                                       <div class="form-group">
-                                          <label for="company">Empresa</label>
+                                          <label for="company">Com qual empresa ocorreu o problema</label>
                                           <input type="text" class="form-control" id="company" placeholder="Empresa">
                                       </div>
                                       <div class="form-group">
@@ -107,7 +107,7 @@
                       <button type="button" data-toggle="modal" data-target="#modalFormCompany" class="btn btn-lg btn-block btn-profile">Empresa</button>
                   </div>
 
-                  <div class="modal fade" id="modalFormCompany" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                  <div class="modal wow fadeIn" id="modalFormCompany" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                       <div class="modal-dialog" role="document">
                           <div class="modal-content">
                               <div class="modal-header">
@@ -151,7 +151,7 @@
                       <button type="button" data-toggle="modal" data-target="#modalFormConciliator" class="btn btn-lg btn-block btn-profile">Conciliador</button>
                   </div>
 
-                  <div class="modal fade" id="modalFormConciliator" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                  <div class="modal wow fadeIn" id="modalFormConciliator" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                       <div class="modal-dialog" role="document">
                           <div class="modal-content">
                               <div class="modal-header">
@@ -188,7 +188,7 @@
       </div>
     </section>
 
-    <section id="howitworks" class="white-section content-section">
+    <section id="howitworks" class="white-section content-section" >
         <div class="container wow fadeIn">
             <h1>Como Funciona</h1>
             <h3>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</h3>
@@ -213,35 +213,48 @@
         <br />
     </section>
 
-    <section id="about" class="content-section about">
-        <div class="container wow fadeInDown">
+    <section id="about" class="content-section about" style="background-color:#f1f1f1">
+        <div class="container wow fadeIn">
             <h1>Quem Somos</h1>
             <h3>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident,
                 similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.</h3>
             <br>
             <h3>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident,
                 similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.</h3>
+            <br />
+            <br />
         </div>
     </section>
 
     <section id="contact" class="content-section contact">
         <div class="container">
-            <h1>Contato</h1>
-            <form>
-                <div class="form-group">
-                    <label for="exampleInputName">Nome</label>
-                    <input type="email" class="form-control" id="exampleInputName" placeholder="Nome">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>Contato</h1>
                 </div>
-                <div class="form-group">
-                    <label for="exampleInputEmail1">Email</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                <div class="col-md-6">
+                    <h3>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas </h3>
                 </div>
-                <div class="form-group">
-                    <label for="textArea">Menssagem</label>
-                    <textarea name="" id="textArea" class="form-control" cols="30" rows="8"></textarea>
+                <div class="col-md-6">
+
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputName">Nome</label>
+                            <input type="email" class="form-control" id="exampleInputName" placeholder="Nome">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <label for="textArea">Menssagem</label>
+                            <textarea name="" id="textArea" class="form-control" cols="30" rows="8"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-submit pull-right">Enviar</button>
+                    </form>
                 </div>
-                <button type="submit" class="btn btn-submit">Enviar</button>
-            </form>
+            </div>
+
         </div>
 
     </section>
