@@ -11,6 +11,12 @@
   -webkit-font-smoothing: antialiased;
 }
 
+a {
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
 .full-background {
   background: url(/assets/img/mydeal_background.jpg) top center no-repeat !important;
   -webkit-background-size: cover;
@@ -153,6 +159,7 @@ a.navbar-brand {
 
 .content-section {
   padding-top: 15px;
+  margin-top: 30px;
   h1 {
     font-family: 'OSwald', sans-serif;
     color: #666666;
@@ -163,15 +170,33 @@ a.navbar-brand {
     font-size: 20px;
     line-height: 30px;
   }
+  h4 {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 28px;
+    color:#666;
+    margin-top:20px;
+  }
+
+  .about {
+    background-color:#CCCCCC;
+    min-height: 500px;
+  }
+
+  .contact {
+    min-height: 500px;
+  }
 }
 
+.steps {
+  margin-top: 90px;
+}
 .step {
-  background-color: #f1f1f1;
+  border:10px solid #D6CAB5;
   width: 120px;
   height: 120px;
   border-radius: 60px;
   font-size: 20px;
-  color: #fff;
+  color: #000;
   line-height: 100px;
   text-align: center;
 }
