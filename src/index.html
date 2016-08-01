@@ -5,6 +5,7 @@
     <title>MyDeeal</title>
     <link rel="stylesheet" href="assets/css/bootstrap.css" media="screen" title="no title" charset="utf-8">
     <link rel="stylesheet" href="assets/css/animate.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="assets/css/angucomplete.css" media="screen" title="no title" charset="utf-8">
     <link rel="stylesheet" href="assets/css/less/style.css" media="screen" title="no title" charset="utf-8">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" media="screen" title="no title" charset="utf-8">
 
@@ -19,6 +20,8 @@
     <link href='https://fonts.googleapis.com/css?family=Economica' rel='stylesheet' type='text/css'>
 
     <script src="assets/libs/angular.min.js"></script>
+    <script src="assets/libs/angucomplete.js"></script>
+
 
 </head>
 <body  ng-app="mydeealModule" ng-controller="MyDeealController">
@@ -64,31 +67,20 @@
                   </div>
 
                   <div class="modal wow fadeIn" id="modalFormClient" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                      <div class="modal-dialog" role="document">
+                      <div class="modal-dialog modal-sm" role="document">
                           <div class="modal-content">
                               <div class="modal-header">
                                   <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                  <h3 class="modal-title" id="myModalLabel1">Cliente
-                                      <small class="modal-subtitle"><br/>Registre o seu problema</small>
+                                  <h3 class="modal-title" id="myModalLabel1">Cliente<small class="modal-subtitle"><br/>Informe os dados abaixo</small>
                                   </h3>
                               </div>
                               <div class="modal-body">
                                   <form>
                                       <div class="form-group">
-                                          <label for="clientName">Informe seu Nome</label>
                                           <input type="text" class="form-control" id="clientName" placeholder="Nome">
                                       </div>
                                       <div class="form-group">
-                                          <label for="clientEmail">Informe seu Email</label>
                                           <input type="email" class="form-control" id="clientEmail" placeholder="Email">
-                                      </div>
-                                      <div class="form-group">
-                                          <label for="company">Com qual empresa ocorreu o problema</label>
-                                          <input type="text" class="form-control" id="company" placeholder="Empresa">
-                                      </div>
-                                      <div class="form-group">
-                                          <label for="problemTextarea">Relate o problema ocorrido</label>
-                                          <textarea rows="3" type="email" class="form-control" id="problemTextarea"></textarea>
                                       </div>
                                   </form>
                               </div>
@@ -119,19 +111,15 @@
                               <div class="modal-body">
                                   <form>
                                       <div class="form-group">
-                                          <label for="companyName">Razão Social</label>
                                           <input type="text" class="form-control" id="companyName" placeholder="Razão Social">
                                       </div>
                                       <div class="form-group">
-                                          <label for="CNPJ">CNPJ</label>
                                           <input type="text" class="form-control" id="CNPJ" placeholder="CNPJ">
                                       </div>
                                       <div class="form-group">
-                                          <label for="companyEmail">Email</label>
                                           <input type="email" class="form-control" id="companyEmail" placeholder="Email">
                                       </div>
                                       <div class="form-group">
-                                          <label for="companyTelephone">Telefone</label>
                                           <input type="email" class="form-control" id="companyTelephone" placeholder="Telefone">
                                       </div>
                                   </form>
@@ -163,15 +151,12 @@
                               <div class="modal-body">
                                   <form>
                                       <div class="form-group">
-                                          <label for="concilatorName">Nome</label>
                                           <input type="text" class="form-control" id="concilatorName" placeholder="Nome">
                                       </div>
                                       <div class="form-group">
-                                          <label for="conciliatorCPF">CPF</label>
                                           <input type="text" class="form-control" id="conciliatorCPF" placeholder="CPF">
                                       </div>
                                       <div class="form-group">
-                                          <label for="conciliatorEmail">Email</label>
                                           <input type="email" class="form-control" id="conciliatorEmail" placeholder="Email">
                                       </div>
                                   </form>

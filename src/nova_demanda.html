@@ -1,0 +1,57 @@
+<div ng-controller="AdminController">
+    <div class="modal" id="modalListaConciliador" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h3 class="modal-title" id="myModalLabel1">Seleciona um conciliador para o seu caso</h3>
+                </div>
+                <div class="modal-body">
+                    <div class="list-conciliador">
+                        <div class="perfil-conciliador"
+                             ng-repeat="conc in conciliadores"
+                             ng-class="{'selecionado': conciliadorSelecionado == conc.nome}"
+                             ng-click="selecionarConciliador(conc.nome)">
+
+                            <h3>{{conc.nome}} <br><small>{{conc.perfil}}</small></h3>
+                            <h4><span class="label label-default">{{conc.casosResolvidos}}</span> Casos</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success">Confirmar</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid content-section">
+        <h1>Nova Demanda</h1>
+
+        <div class="row form-area">
+            <div class="col-md-8">
+                <form class="admin-form">
+                    <div class="form-group">
+                        <label >Com qual empresa ocorreu o problema</label>
+                        <angucomplete id="ex1"
+                                      placeholder="Digite o nome da empresa"
+                                      pause="100"
+                                      selectedobject="empresaSelecionada"
+                                      localdata="empresas"
+                                      searchfields="razaoSocial"
+                                      titlefield="razaoSocial"
+                                      minlength="1"
+                                      inputclass="form-control form-control-small"/>
+                    </div>
+                    <div class="form-group">
+                        <label >Relate o problema ocorrido</label>
+                        <textarea rows="8" type="email" class="form-control" ></textarea>
+                    </div>
+                    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#modalListaConciliador">Confirmar</button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+</div>

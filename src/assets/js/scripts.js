@@ -1,8 +1,8 @@
 $(window).scroll(function () {
-    if ($(".nav").offset().top > 50) {
-        $(".nav").addClass("nav-dark");
+    if ($(".nav-deal").offset().top > 50) {
+        $(".nav-deal").addClass("nav-dark");
     } else {
-        $(".nav").removeClass("nav-dark");
+        $(".nav-deal").removeClass("nav-dark");
     }
 });
 $(function () {

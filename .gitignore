@@ -3,3 +3,4 @@ node_modules
 .DS_Store
 build
 .grunt
+src/assets/css/less/style.css

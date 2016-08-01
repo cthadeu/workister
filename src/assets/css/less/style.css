@@ -6,6 +6,9 @@
     background-position: 187% 0%;
   }
 }
+.btn {
+  border-radius: 0px;
+}
 * {
   -webkit-font-smoothing: antialiased;
 }
@@ -47,11 +50,11 @@ a {
 .nav-deal {
   padding-top: 20px;
   padding-bottom: 20px;
-  -webkit-transition: background-color 0.9s linear;
-  -moz-transition: background-color 0.9s linear;
-  -o-transition: background-color 0.9s linear;
-  -ms-transition: background-color 0.9s linear;
-  transition: background-color 0.9s linear;
+  -webkit-transition: background-color 0.5s linear;
+  -moz-transition: background-color 0.5s linear;
+  -o-transition: background-color 0.5s linear;
+  -ms-transition: background-color 0.5s linear;
+  transition: background-color 0.5s linear;
   background-color: transparent;
 }
 .nav-deal a {
@@ -63,11 +66,11 @@ a {
 }
 .nav-dark {
   background: #414141;
-  -webkit-transition: background-color 0.9s linear;
-  -moz-transition: background-color 0.9s linear;
-  -o-transition: background-color 0.9s linear;
-  -ms-transition: background-color 0.9s linear;
-  transition: background-color 0.9s linear;
+  -webkit-transition: background-color 0.5s linear;
+  -moz-transition: background-color 0.5s linear;
+  -o-transition: background-color 0.5s linear;
+  -ms-transition: background-color 0.5s linear;
+  transition: background-color 0.5s linear;
 }
 .menu-space {
   padding-top: 150px;
@@ -301,6 +304,7 @@ form .btn-submit {
 }
 form .btn-submit:hover {
   background-color: #827866;
+  color: #fff;
   -webkit-transition: background-color 0.2s linear;
   -moz-transition: background-color 0.2s linear;
   -o-transition: background-color 0.2s linear;
@@ -310,4 +314,90 @@ form .btn-submit:hover {
 form .btn-submit:focus {
   outline: none !important;
   border-color: #AD9C7C;
+}
+.side-menu {
+  height: 100vh;
+  background-color: #414141;
+  color: #FFF;
+}
+.side-menu .logo h3 {
+  font-size: 30px;
+  font-family: 'Economica', sans-serif;
+  text-transform: lowercase;
+}
+.side-menu .logged-user-info {
+  color: #f1f1f1;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+}
+.menu-items {
+  margin-top: 30px;
+  border-top: 1px solid #333333;
+}
+.menu-items a {
+  color: #b2b2b2;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+}
+.menu-items a:hover {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.menu-items div {
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-bottom: 1px solid #333333;
+}
+.card-list,
+.form-area {
+  margin-top: 90px;
+}
+.card {
+  font-family: 'Open Sans', sans-serif;
+  width: 320px;
+  height: 230px;
+  background: #f1f1f1;
+  border-bottom: 4px solid #b2b2b2;
+  border-radius: 5px;
+  color: #333333;
+  padding-left: 15px;
+  padding-right: 15px;
+  float: left;
+  margin-right: 40px;
+  margin-bottom: 40px;
+}
+.card .action {
+  height: 30px;
+}
+.perfil-conciliador {
+  width: 200px;
+  height: 100px;
+  display: inline-block;
+  margin-right: 8px;
+  margin-top: 10px;
+  background: #f1f1f1;
+  padding-left: 10px;
+  padding-right: 10px;
+  cursor: pointer;
+}
+.perfil-conciliador h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+}
+.perfil-conciliador h4 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+}
+.perfil-conciliador:hover {
+  background-color: #D6CAB5;
+}
+.selecionado {
+  background-color: #D6CAB5;
+}
+.admin-form {
+  font-family: 'Open Sans', sans-serif;
+}
+.admin-form .form-control {
+  font-size: 14px;
 }
