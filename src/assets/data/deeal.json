@@ -3,18 +3,25 @@
     "empresa":"Lojas Americanas",
     "dataAbertura": "01/08/2016",
     "situacao": "em_andamento",
-    "descricao":""
+    "conciliador": "José da Silva",
+    "descricao":"",
+    "cliente":"Cyro Thadeu"
   },
   {
     "empresa":"Submarino",
     "dataAbertura": "01/06/2016",
     "situacao": "em_negociacao",
-    "descricao":""
+    "conciliador": "Silvio Santos",
+    "descricao":"",
+    "cliente":"Cyro Thadeu"
   },
   {
     "empresa":"Ponto Frio",
     "dataAbertura": "10/01/2015",
     "situacao": "finalizada",
-    "descricao":""
+    "conciliador":"Maria Duarte",
+    "descricao":"",
+    "cliente":"Cyro Thadeu"
+
   }
 ]

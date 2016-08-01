@@ -25,45 +25,45 @@
     <script src="assets/libs/sweetalert.min.js"></script>
 
 </head>
-<body  ng-app="mydeealModule" ng-controller="AdminController">
+<body  ng-app="mydeealModule" ng-controller="AdminConciliadorController">
 
-    <div class="row">
-        <div class="col-md-2 side-menu">
-            <div class="logo text-center">
-                <h3>my d<span class="blue">ee</span>al</h3>
-            </div>
-            <div class="container-fluid">
-                <br>
-                <div class="logged-user-info text-center">
-                    <h3><i class="fa fa-user" aria-hidden="true"></i>  </h3>
-                    <h4>Cyro Thadeu</h4>
+<div class="row">
+    <div class="col-md-2 side-menu">
+        <div class="logo text-center">
+            <h3>my d<span class="blue">ee</span>al</h3>
+        </div>
+        <div class="container-fluid">
+            <br>
+            <div class="logged-user-info text-center">
+                <h3><i class="fa fa-user" aria-hidden="true"></i>  </h3>
+                <h4>Conci Liador</h4>
 
-                </div>
-            </div>
-
-            <div class="menu-items">
-                <div><a href="#" ng-click="goTo('demandas.html')"><i class="fa fa-gavel" aria-hidden="true"></i> Minhas Negociações</a></div>
-                <div><a href="#" ng-click="goTo('nova_demanda.html')"><i class="fa fa-plus-circle" aria-hidden="true"></i> Nova Negociação</a></div>
-                <div><a href="#"><i class="fa fa-calendar" aria-hidden="true"></i> Agendamentos</a></div>
-                <div><a href="#"><i class="fa fa-key" aria-hidden="true"></i> Alterar Senha</a></div>
-                <div><a href="index.html"><i class="fa fa-sign-out" aria-hidden="true"></i> Sair</a></div>
             </div>
         </div>
-        <div class="col-md-10" ng-include="form">
+
+        <div class="menu-items">
+            <div><a href="#" ng-click="goTo('demandas_conciliador.html')"><i class="fa fa-gavel" aria-hidden="true"></i> Negociações</a></div>
+            <div><a href="#"><i class="fa fa-calendar" aria-hidden="true"></i> Agendamentos</a></div>
+            <div><a href="#"><i class="fa fa-key" aria-hidden="true"></i> Alterar Senha</a></div>
+            <div><a href="#"><i class="fa fa-male" aria-hidden="true"></i> Perfil</a></div>
+            <div><a href="index.html"><i class="fa fa-sign-out" aria-hidden="true"></i> Sair</a></div>
         </div>
     </div>
+    <div class="col-md-10" ng-include="form">
+    </div>
+</div>
 
 
-    <script src="assets/libs/jquery-1.12.3.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="assets/libs/jquery-1.12.3.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
-    <script>window.jQuery || document.write('<script src="assets/components/jquery.js"><\/script>');</script>
-    <script src="assets/js/app.js"></script>
-    <script src="assets/js/scripts.js"></script>
-    <script src="assets/libs/wow.min.js"></script>
-    <script>
-        var wow = new WOW();
-        wow.init();
-    </script>
+<script>window.jQuery || document.write('<script src="assets/components/jquery.js"><\/script>');</script>
+<script src="assets/js/app.js"></script>
+<script src="assets/js/scripts.js"></script>
+<script src="assets/libs/wow.min.js"></script>
+<script>
+    var wow = new WOW();
+    wow.init();
+</script>
 </body>
 </html>

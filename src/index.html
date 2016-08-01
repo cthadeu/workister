@@ -61,15 +61,15 @@
                 <div class="modal-body">
                     <form>
                         <div class="form-group">
-                            <input type="text" class="form-control" id="email" placeholder="Email">
+                            <input type="text" class="form-control" ng-model="email" id="email" placeholder="Email">
                         </div>
                         <div class="form-group">
-                            <input type="password" class="form-control" id="pass" placeholder="Senha">
+                            <input type="password" class="form-control" ng-model="senha" id="pass" placeholder="Senha">
                         </div>
                     </form>
                 </div>
                 <div class="modal-footer">
-                    <a href="admin.html" class="btn btn-modal">Entrar</a>
+                    <a href="#" class="btn btn-modal" ng-click="login()">Entrar</a>
                 </div>
             </div>
         </div>
