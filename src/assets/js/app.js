@@ -16,6 +16,9 @@
 
             if ($scope.email == "conciliador@email.com")
                 window.location = 'admin_conciliador.html'
+
+            if ($scope.email == "submarino@email.com")
+                window.location = 'admin_empresa.html'
         }
 
   }]);
@@ -112,5 +115,50 @@
         }
 
     }]);
+
+    deeal.controller('AdminEmpresaController', ['$scope', '$http', '$timeout', function($scope, $http, $timeout) {
+
+        $scope.form = "demandas_empresa.html";
+        $scope.deals = [];
+
+        $http.get('./assets/data/empresas.json').then(function(response) {
+            $scope.empresas = response.data;
+        });
+
+        $http.get('./assets/data/deeal.json').then(function(response) {
+            $scope.deals = response.data;
+        });
+
+        $http.get('./assets/data/conciliador.json').then(function(response) {
+            $scope.conciliadores = response.data;
+        });
+
+        $scope.selecionarConciliador = function(name){
+            $scope.conciliadorSelecionado = name;
+        }
+
+        $scope.goTo = function(item) {
+            $scope.form = item;
+        }
+        $scope.cssStatusDemanda = function(status) {
+            if (status == 'em_andamento')
+                return 'label-info';
+            if (status == 'em_negociacao')
+                return 'label-warning'
+            if (status == 'finalizada')
+                return 'label-success'
+        }
+
+        $scope.descreveStatus = function(status) {
+            if (status == 'em_andamento')
+                return 'Em Andamento';
+            if (status == 'em_negociacao')
+                return 'Em Negociação'
+            if (status == 'finalizada')
+                return 'Finalizada'
+        }
+
+    }]);
+
 
 })(window.angular);
