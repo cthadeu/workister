@@ -393,3 +393,17 @@ form .btn-submit:focus {
 .admin-form .form-control {
   font-size: 14px;
 }
+a {
+  color: #AD9C7C;
+  text-decoration: none;
+  font-size: 20px;
+}
+a:hover {
+  color: #f4e3ad;
+  text-decoration: none;
+}
+a:focus {
+  color: #f4e3ad;
+  text-decoration: none;
+  outline: none;
+}
