@@ -19,3 +19,14 @@ $('.navbar-collapse ul li a').click(function () {
     $('.navbar-toggle:visible').click();
 });
 
+function msgSucessoDemanda(){
+    swal({
+        title: "Demanda Registrada",
+        text:"Sua demanda foi registrada com sucesso. A empresa e o conciliador ja foram informados.",
+        type:"success",
+    },
+    function(){
+        window.location='admin.html';
+    })
+}
+

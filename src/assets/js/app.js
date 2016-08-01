@@ -8,13 +8,11 @@
         $scope.form = "";
         $scope.data = [];
 
-
-
   }]);
 
     deeal.controller('AdminController', ['$scope', '$http', '$timeout', function($scope, $http, $timeout) {
 
-        $scope.form = "nova_demanda.html";
+        $scope.form = "demandas.html";
         $scope.deals = [];
         $scope.conciliadores = [];
         $scope.conciliadorSelecionado = "";

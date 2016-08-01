@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="assets/css/bootstrap.css" media="screen" title="no title" charset="utf-8">
     <link rel="stylesheet" href="assets/css/animate.css" media="screen" title="no title" charset="utf-8">
     <link rel="stylesheet" href="assets/css/angucomplete.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="assets/css/sweetalert.css" media="screen" title="no title" charset="utf-8">
     <link rel="stylesheet" href="assets/css/less/style.css" media="screen" title="no title" charset="utf-8">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" media="screen" title="no title" charset="utf-8">
 
@@ -20,6 +21,7 @@
     <link href='https://fonts.googleapis.com/css?family=Economica' rel='stylesheet' type='text/css'>
 
     <script src="assets/libs/angular.min.js"></script>
+    <script src="assets/libs/sweetalert.min.js"></script>
     <script src="assets/libs/angucomplete.js"></script>
 
 
@@ -42,10 +44,36 @@
                     <li><a class="page-scroll" href="#howitworks">Como Funciona</a></li>
                     <li><a class="page-scroll" href="#about">Quem Somos</a></li>
                     <li><a class="page-scroll" href="#contact">Contato</a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#modalLogin">Login</a></li>
                 </ul>
             </div><!--/.nav-collapse -->
         </div>
     </nav>
+
+    <div class="modal wow fadeIn" id="modalLogin" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h3 class="modal-title" id="modalLoginTitle">Login</small>
+                    </h3>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="email" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" id="pass" placeholder="Senha">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <a href="admin.html" class="btn btn-modal">Entrar</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <section class="full-background" id="mainSection">
       <div class="container ">
