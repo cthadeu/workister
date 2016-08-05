@@ -1,5 +1,5 @@
 <div class="container-fluid content-section" ng-controller="AdminController">
-    <h1>Negocioações</h1>
+    <h1>Negociações</h1>
 
     <div class="card-list">
         <div class="card" ng-repeat="deal in deals">
@@ -9,6 +9,7 @@
                 <div class="col-md-6"><h4><small>Data Abertura</small><br /> {{deal.dataAbertura}}</h4></div>
                 <div class="col-md-6"><h4><small>Situação</small><br /> <span class="label {{cssStatusDemanda(deal.situacao)}}">{{descreveStatus(deal.situacao)}}</h4></div>
             </div>
+            <br>
             <div class="action">
                 <button class="btn btn-default btn-sm">Detalhes</button>
             </div>

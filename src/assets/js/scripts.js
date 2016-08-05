@@ -14,7 +14,9 @@ $(function () {
         $('html, body').stop().animate({scrollTop: $($anchor.attr('href')).offset().top-100}, 700);
         event.preventDefault();
     });
+    
 });
+
 $('.navbar-collapse ul li a').click(function () {
     $('.navbar-toggle:visible').click();
 });
@@ -22,11 +24,10 @@ $('.navbar-collapse ul li a').click(function () {
 function msgSucessoDemanda(){
     swal({
         title: "Demanda Registrada",
-        text:"Sua demanda foi registrada com sucesso. A empresa e o conciliador ja foram informados.",
+        text:"Sua demanda foi registrada com sucesso. A empresa e o conciliador já foram informados.",
         type:"success",
     },
     function(){
         window.location='admin.html';
     })
 }
-

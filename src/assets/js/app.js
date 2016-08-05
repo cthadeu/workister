@@ -95,6 +95,12 @@
 
         $scope.goTo = function(item) {
             $scope.form = item;
+            jQuery(".hourNegociation").mask("99:99");
+            jQuery(".datepicker").mask("99/99/9999");
+            jQuery(".datepicker").datepicker({
+                language: 'pt-BR',
+                dateFormat: 'dd/mm/yyyy'
+            });
         }
         $scope.cssStatusDemanda = function(status) {
             if (status == 'em_andamento')
@@ -159,6 +165,6 @@
         }
 
     }]);
-
-
+    
 })(window.angular);
+
