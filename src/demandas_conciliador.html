@@ -21,7 +21,7 @@
                 <div class="col-md-6">
                     <h4>
                         <small>Situação</small>
-                        <br/> <span class="label {{cssStatusDemanda(deal.situacao)}}">{{descreveStatus(deal.situacao)}}
+                        <br/> <span class="label {{cssStatusDemanda(deal.situacao)}}">{{descreveStatus(deal.situacao)}}</span>
                     </h4>
                 </div>
             </div>
@@ -54,11 +54,11 @@
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
-                                <div class="input-group date" id="datepicker">
+                                <div class="input-group date" data-provide="datepicker" id="datepicker">
                                     <span class="input-group-addon">
                                             <i class="fa fa-calendar" aria-hidden="true"></i>
                                     </span>
-                                    <input type="text" id="dateNegociation" class="form-control datepicker" placeholder="Data"/>
+                                    <input data-date-format="dd/mm/yyyy" type="text" id="dateNegociation" class="form-control datepicker" placeholder="Data"/>
                                 </div>
                             </div>
                         </div>

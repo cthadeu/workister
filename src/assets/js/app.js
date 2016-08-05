@@ -99,6 +99,7 @@
             jQuery(".datepicker").mask("99/99/9999");
             jQuery(".datepicker").datepicker({
                 language: 'pt-BR',
+                todayHighlight: true,
                 dateFormat: 'dd/mm/yyyy'
             });
         }
