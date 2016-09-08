@@ -175,13 +175,15 @@ a.navbar-brand {
   border-color: #AD9C7C;
 }
 .modal input,
-.modal textarea {
+.modal textarea,
+.modal select {
   -webkit-border-radius: 0px !important;
   -moz-border-radius: 0px !important;
   border-radius: 0px !important;
   border: none;
   background-color: #f1f1f1;
   font-size: 20px;
+  margin: 0 auto;
 }
 .modal input:focus {
   outline: none !important;
@@ -192,6 +194,20 @@ a.navbar-brand {
   outline: none !important;
   border-color: #AD9C7C;
   box-shadow: 0 0 10px #AD9C7C;
+}
+.modal select:focus {
+  outline: none !important;
+  border-color: #AD9C7C;
+  box-shadow: 0 0 10px #AD9C7C;
+}
+.modal .input-group-addon {
+  -webkit-border-radius: 0px !important;
+  -moz-border-radius: 0px !important;
+  border-radius: 0px !important;
+  border: none;
+  background-color: #f1f1f1;
+  font-size: 20px;
+  margin: 0 auto;
 }
 .modal .btn-modal {
   border-radius: 1px;
@@ -228,15 +244,17 @@ a.navbar-brand {
   text-align: left;
   vertical-align: middle;
 }
-.modal-title {
+h3.modal-title {
   font-family: "Oswald";
   font-size: 25px;
   -webkit-font-smoothing: antialiased;
   text-align: center;
+  color: black;
 }
-.modal-title .small {
+h3.modal-title .small {
   font-family: "Lato";
   font-size: 15px;
+  color: #CCCCCC;
 }
 .modal-body {
   font-family: 'Open Sans Condensed', sans-serif;
@@ -246,21 +264,28 @@ a.navbar-brand {
   -webkit-border-radius: 0px !important;
   -moz-border-radius: 0px !important;
   border-radius: 0px !important;
+  text-align: center;
 }
 .modal-header {
   border-bottom: 1px solid #e7d6b5;
 }
 .modal-footer {
   border-top: none;
+  text-align: center;
+}
+.modal-open .datepicker {
+  z-index: 1200 !important;
 }
 form {
   font-family: 'Open Sans Condensed', sans-serif;
 }
-form .form-group input {
+form .form-group input,
+form .form-group select {
   height: 45px;
 }
 form .form-group input,
-form .form-group textarea {
+form .form-group textarea,
+form .form-group select {
   -webkit-border-radius: 0px !important;
   -moz-border-radius: 0px !important;
   border-radius: 0px !important;
@@ -275,6 +300,11 @@ form .form-group input:focus {
   box-shadow: 0 0 10px #AD9C7C;
 }
 form .form-group textarea:focus {
+  outline: none !important;
+  border-color: #AD9C7C;
+  box-shadow: 0 0 10px #AD9C7C;
+}
+form .form-group select:focus {
   outline: none !important;
   border-color: #AD9C7C;
   box-shadow: 0 0 10px #AD9C7C;
@@ -344,7 +374,7 @@ form .btn-submit:focus {
 .card {
   font-family: 'Open Sans', sans-serif;
   width: 320px;
-  height: 230px;
+  height: 280px;
   background: #f1f1f1;
   border-bottom: 4px solid #b2b2b2;
   border-radius: 5px;
@@ -354,6 +384,10 @@ form .btn-submit:focus {
   float: left;
   margin-right: 40px;
   margin-bottom: 40px;
+}
+.card h3 {
+  margin-top: 4px;
+  margin-bottom: 4px;
 }
 .card .action {
   height: 30px;
@@ -388,4 +422,40 @@ form .btn-submit:focus {
 }
 .admin-form .form-control {
   font-size: 14px;
+}
+a {
+  color: #AD9C7C;
+  text-decoration: none;
+  font-size: 20px;
+}
+a:hover {
+  color: #f4e3ad;
+  text-decoration: none;
+}
+a:focus {
+  color: #f4e3ad;
+  text-decoration: none;
+  outline: none;
+}
+.btn-block {
+  display: block;
+  width: 100%;
+  color: #FFFFFF;
+  background-color: #AD9C7C;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Oswald";
+  font-size: 15px;
+}
+.btn-block:hover {
+  background-color: #827866;
+  color: #fff;
+  -webkit-transition: background-color 0.2s linear;
+  -moz-transition: background-color 0.2s linear;
+  -o-transition: background-color 0.2s linear;
+  -ms-transition: background-color 0.2s linear;
+  transition: background-color 0.2s linear;
+}
+.btn-block:focus {
+  outline: none !important;
+  border-color: #AD9C7C;
 }
