@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="assets/css/angucomplete.css" media="screen" title="no title" charset="utf-8">
     <link rel="stylesheet" href="assets/css/sweetalert.css" media="screen" title="no title" charset="utf-8">
     <link rel="stylesheet" href="assets/css/less/style.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="assets/css/pages.css" media="screen" title="no title" charset="utf-8">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" media="screen" title="no title" charset="utf-8">
 
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700italic' rel='stylesheet' type='text/css'>
@@ -20,14 +21,17 @@
     <link href='https://fonts.googleapis.com/css?family=Exo+2' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Economica' rel='stylesheet' type='text/css'>
 
+    
     <script src="assets/libs/angular.min.js"></script>
     <script src="assets/libs/sweetalert.min.js"></script>
     <script src="assets/libs/angucomplete.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-route.js"></script>
+    
 
 
 </head>
 <body  ng-app="mydeealModule" ng-controller="MyDeealController">
-    <nav class="nav navbar-fixed-top nav-deal">
+    <nav class="nav  nav-deal">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -42,7 +46,7 @@
             </div>
             <div id="navbar" class="collapse navbar-collapse animated fadeIn">
                 <ul class="nav navbar-nav pull-right">
-                    <li><a href="javascript:$('#modalLogin').modal('toggle')" >Entrar</a></li>
+                    <li><a href="javascript:$('#modalLogin').modal('toggle')">Entrar</a></li>
                     <li><a href="/result.html#/workister/signup">Cadastre seu serviço</a></li>
                 </ul>
                 
@@ -77,67 +81,12 @@
         </div>
     </div>
 
+
+
     <section  id="mainSection">
-      <div class="container ">
+      <div class="container" ng-view>
 
-          <div class="row jumbo-header">                            
-              <div class="col-md-6 col-md-offset-3">
-                    <h1>Agende online os profissionais mais próximos de você</h1>
-                    <br />
-                </div>
-              <div class="col-md-12">
-                  <div class="search_box animated fadeIn">                    
-                      <div class="row">                            
-                            <div class="col-xs-5">
-                                <input type="text" class="form-control input-lg" placeholder="Qual especialidade você precisa ?" />
-                            </div>
-                            <div class="col-xs-3" style="border-left:1px solid #b3dada;">
-                                <input type="text" class="form-control input-lg" placeholder="Qual município ?" />
-                            </div>
-                            <div class="col-xs-2" style="border-left:1px solid #b3dada;">
-                                <input type="text" class="form-control input-lg" placeholder="Qual bairro ?" />
-                            </div>                            
-                            <div class="col-xs-2">
-                                <button class="btn btn-info btn-lg btn-block" onclick="window.location='result.html'"><i class="fa fa-search" aria-hidden="true"></i> Buscar</button>
-                            </div>
-                      </div>
-                      
-                  </div>
-              </div>              
-          </div>
-          <div class="row profile-types ">
-              <div class="col-md-4">                  
-                  <div class="modal wow fadeIn" id="modalFormClient" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                      <div class="modal-dialog modal-sm" role="document">
-                          <div class="modal-content">
-                              <div class="modal-header">
-                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                  <h3 class="modal-title" id="myModalLabel1">Cliente
-                                      <small class="modal-subtitle"><br/>Informe os dados abaixo</small>
-                                  </h3>
-                              </div>
-                              <div class="modal-body">
-                                  <form>
-                                      <div class="form-group">
-                                          <input type="text" class="form-control" id="clientName" placeholder="Nome">
-                                      </div>
-                                      <div class="form-group">
-                                          <input type="email" class="form-control" id="clientEmail" placeholder="Email">
-                                      </div>
-                                  </form>
-                              </div>
-                              <div class="modal-footer">
-                                  <button type="button" class="btn btn-modal">Confirmar</button>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-
-              </div>
-
-              
-              
-          </div>
+            
       </div>
     </section>
 

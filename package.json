@@ -1,14 +1,14 @@
 {
-  "name": "MyDeeal",
-  "title": "Deals.",
-  "url": "https://github.com/cthadeu/mydeeal.git",
+  "name": "Workister",
+  "title": "Workister.",
+  "url": "https://github.com/cthadeu/workister.git",
   "author": "Cyro Thadeu",
   "copyright": "2016",
   "version": "1.0.0",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/cthadeu/mydeeal.git"
+    "url": "https://github.com/cthadeu/workister.git"
   },
   "devDependencies": {
     "connect-livereload": "^0.5.4",

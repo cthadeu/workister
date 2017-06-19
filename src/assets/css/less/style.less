@@ -1,11 +1,17 @@
-
-
-.btn {
-  border-radius: 0px;
-}
-
 * {
   -webkit-font-smoothing: antialiased;
+}
+html, body {
+  min-height: 100%;
+  height: 100%;
+}
+
+body {
+  background: url(../../img/medical_bg.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 a {
@@ -14,28 +20,107 @@ a {
   transition: all .2s ease-in-out;
 }
 
-.full-background {
-  background: url(../../img/mydeal_background.jpg) top center no-repeat !important;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover !important;
+.jumbo-header {
+  margin-top:180px;
+  h1 {
+   font-family: "Lato"; 
+   line-height: 38px;
+   font-size: 35px;   
+   font-weight: bold;
+   color:#FFF;
+   text-align: center;
+   text-shadow: 0px 1px 2px rgba(0, 0, 0, 1);
+  }
+}
 
+.search_box {  
+  margin-top:40px;
+  padding:12px;
+  background-color: #00d9d9;
+  border-radius: 50px;
 
+  -webkit-box-shadow: 3px 18px 72px -19px rgba(0,0,0,0.75);
+  -moz-box-shadow: 3px 18px 72px -19px rgba(0,0,0,0.75);
+  box-shadow: 3px 18px 72px -19px rgba(0,0,0,0.75);
+
+  
+  h1 {
+   
+  }
+  input {
+    font-size:20px;
+    padding:12px;
+    border:1px solid #00d9d9;
+    background-color: #00d9d9;
+    box-shadow: none;
+    color:#FFF;
+    font-family: "Lato";
+    -webkit-appearance: none;
+  }
+
+  input:focus{
+    outline: none;
+  }
+
+  ::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+  }
+
+  ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #FFF;
+  }
+  :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    #FFF;
+    opacity:  1;
+  }
+  ::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    #FFF;
+    opacity:  1;
+  }
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color:    #FFF;
+  }
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color:    #FFF;
+  }
+    
+  button {
+    font-family: "Lato";
+    background-color:#00d9d9;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-color:transparent;
+    color:#FFF;
+    font-size:20px;
+  }
+  button:hover {
+    background-color:#6eb2b2;
+    border-color:#6eb2b2;
+  }
 }
 
 .navbar-nav > li > a {
-  border-bottom: 1px solid transparent;
+  font-family: "Lato";   
+  font-size:14px;
+  background-color:#FFF;
+  color:#00d9d9;
+  margin-left: 5px;  
   display: inline-block;
   transition: 0.5s ease;
   white-space: nowrap;
+  border-radius:5px;
+  padding:10px;
+  min-width: 100px;
+  text-align: center;
+  
+
 }
 
 .navbar-nav > li > a:hover,
 .navbar-nav > li > a:focus {
   color: #FFF;
-  background-color: transparent;
-  border-bottom: 1px solid #AD9C7C;
+  background-color: transparent;  
 
 }
 
@@ -43,31 +128,24 @@ a {
 .navbar-nav > .active > a:hover,
 .navbar-nav > .active > a:focus {
   color: #FFF;
-  background-color: transparent;
-  border-bottom: 1px solid #AD9C7C;
+  background-color: transparent;  
 
 }
 
 .nav-deal {
   padding-top: 20px;
-  padding-bottom:20px;
-  -webkit-transition: background-color 0.5s linear;
-  -moz-transition: background-color 0.5s linear;
-  -o-transition: background-color 0.5s linear;
-  -ms-transition: background-color 0.5s linear;
-  transition: background-color 0.5s linear;
-  background-color: transparent;
+  padding-bottom:20px;  
+  background-color: #00d9d9;
   a {
     font-family: "Teko";
     -webkit-font-smoothing: antialiased;
     font-size: 30px;
-    color: #FFFFFF;
-    text-transform: uppercase;
+    color: #FFFFFF;    
   }
 }
 
 .nav-dark {
-  background: #414141;
+  background: #00d9d9;
   -webkit-transition: background-color 0.5s linear;
   -moz-transition: background-color 0.5s linear;
   -o-transition: background-color 0.5s linear;
@@ -140,9 +218,13 @@ a {
 
 a.navbar-brand {
   font-size: 50px;
-  font-family: 'Economica', sans-serif;
+  font-family: 'Lato', sans-serif;
   text-transform: lowercase;
-  margin-top: -10px
+  margin-top: -10px;
+
+  img {
+    margin-top:-20px;
+  }
 }
 
 .white-section {
@@ -204,35 +286,8 @@ a.navbar-brand {
 .modal {
   text-align: center;
   padding: 0 !important;
-  border-color: #AD9C7C;
+  border-color: #00d9d9;
 
-  input, textarea, select {
-    -webkit-border-radius: 0px !important;
-    -moz-border-radius: 0px !important;
-    border-radius: 0px !important;
-    border: none;
-    background-color: #f1f1f1;
-    font-size: 20px;
-    margin: 0 auto;
-  }
-
-  input:focus {
-    outline: none !important;
-    border-color: #AD9C7C;
-    box-shadow: 0 0 10px #AD9C7C;
-  }
-
-  textarea:focus {
-    outline: none !important;
-    border-color: #AD9C7C;
-    box-shadow: 0 0 10px #AD9C7C;
-  }
-
-  select:focus {
-    outline: none !important;
-    border-color: #AD9C7C;
-    box-shadow: 0 0 10px #AD9C7C;
-  }
 
   .input-group-addon {
     -webkit-border-radius: 0px !important;
@@ -245,19 +300,18 @@ a.navbar-brand {
   }
 
   .btn-modal {
-    border-radius: 1px;
     color: #FFFFFF;
-    background-color: #AD9C7C;
+    background-color: #00d9d9;
     -webkit-font-smoothing: antialiased;
-    font-family: "Oswald";
+    font-family: "Lato";
     font-size: 15px;
     text-align: center;
     height: 40px;
-    width: 100px;
+    width: 100%;
   }
 
   .btn-modal:hover {
-    background-color: #827866;
+    background-color: #2e9e9e;
     -webkit-transition: background-color 0.2s linear;
     -moz-transition: background-color 0.2s linear;
     -o-transition: background-color 0.2s linear;
@@ -265,11 +319,7 @@ a.navbar-brand {
     transition: background-color 0.2s linear;
   }
 
-  .btn-modal:focus{
-    outline: none !important;
-    border-color: #AD9C7C;
-    //box-shadow: 0 0 10px #AD9C7C;
-  }
+  
 }
 
 .modal:before {
@@ -287,21 +337,22 @@ a.navbar-brand {
 }
 
 h3.modal-title {
-  font-family: "Oswald";
+  font-family: "Lato";
   font-size: 25px;
   -webkit-font-smoothing: antialiased;
   text-align: center;
-  color: black;
-  .small {
-    font-family: "Lato";
-    font-size: 15px;
-    color: #CCCCCC;
-  }
+  color: #414141;
+  
 }
 
 .modal-body {
-  font-family: 'Open Sans Condensed', sans-serif;
-  font-size: 20px;
+  font-family: 'Lato', sans-serif;
+  font-size: 15px;
+
+  a {
+    font-size: 15px;
+    color:#2e9e9e;
+  }
 }
 
 .modal-content {
@@ -312,7 +363,7 @@ h3.modal-title {
 }
 
 .modal-header {
-  border-bottom: 1px solid #e7d6b5;
+  border-bottom: 1px solid #00d9d9;
 }
 
 .modal-footer {
@@ -325,42 +376,16 @@ h3.modal-title {
 }
 
 form {
-  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: 'Lato', sans-serif;
 
-  .form-group {
-    input, select {
-      height: 45px;
+    input {
+      border-radius: 10px;
     }
-    input, textarea, select {
-      -webkit-border-radius: 0px !important;
-      -moz-border-radius: 0px !important;
-      border-radius: 0px !important;
-      border: none;
-      background-color: #f1f1f1;
-      font-size: 20px;
-      padding:10px;
-    }
-    input:focus {
-      outline: none !important;
-      border-color: #AD9C7C;
-      box-shadow: 0 0 10px #AD9C7C;
-    }
-    textarea:focus {
-      outline: none !important;
-      border-color: #AD9C7C;
-      box-shadow: 0 0 10px #AD9C7C;
-    }
-    select:focus {
-      outline: none !important;
-      border-color: #AD9C7C;
-      box-shadow: 0 0 10px #AD9C7C;
-    }
-  }
 
     .btn-submit {
       border-radius: 1px;
       color: #FFFFFF;
-      background-color: #AD9C7C;
+      background-color: #00d9d9;
       -webkit-font-smoothing: antialiased;
       font-family: "Oswald";
       font-size: 15px;
@@ -370,7 +395,7 @@ form {
     }
 
     .btn-submit:hover {
-      background-color: #827866;
+      background-color: #2e9e9e;
       color:#fff;
       -webkit-transition: background-color 0.2s linear;
       -moz-transition: background-color 0.2s linear;
@@ -381,7 +406,7 @@ form {
 
     .btn-submit:focus{
       outline: none !important;
-      border-color: #AD9C7C;
+      border-color: #2e9e9e;
       //box-shadow: 0 0 10px #AD9C7C;
     }
 
@@ -485,12 +510,6 @@ form {
   background-color:#D6CAB5;
 }
 
-.admin-form {
-  font-family: 'Open Sans', sans-serif;
-  .form-control {
-    font-size:14px;
-  }
-}
 
 a {
   color: #AD9C7C;
@@ -510,18 +529,8 @@ a:focus {
 }
 
 
-.btn-block {
-  display: block;
-  width: 100%;
-  color: #FFFFFF;
-  background-color: #AD9C7C;
-  -webkit-font-smoothing: antialiased;
-  font-family: "Oswald";
-  font-size: 15px;
-}
-
 .btn-block:hover {
-  background-color: #827866;
+  background-color: #2e9e9e;
   color:#fff;
   -webkit-transition: background-color 0.2s linear;
   -moz-transition: background-color 0.2s linear;
@@ -532,8 +541,85 @@ a:focus {
 
 .btn-block:focus{
   outline: none !important;
-  border-color: #AD9C7C;
+  border-color: #2e9e9e;
 }
 
 .datepicker {
 }
+.card-result {
+  min-height: 250px;
+  min-width: 230px;
+  background-color:#FFF;
+  padding:18px;
+  border-bottom:4px solid #CCC;
+  border-radius:5px;
+  color:#414141;
+  margin-bottom:35px;
+
+  button {
+    font-family: "Lato";
+    background-color:#00d9d9;
+    border:1px solid #00d9d9;
+  }
+  button:hover {
+    background-color:#2e9e9e;
+    border:1px solid #2e9e9e;
+  }
+ 
+}
+.professional-signup {
+  padding-left:40px;
+  padding-top:30px;
+  input {
+    width:100%;
+  }
+  h4 {
+    line-height: 30px;
+    color:#757575; 
+    font-family: "Lato"
+  }
+  h2 {
+    font-size:50px;
+    color:#0B4F6C;
+    font-family: "Lato"
+  }
+}
+
+#workister_signup {
+  padding-top:90px;
+  margin-top:50px;
+
+  h1 {
+     font-family: "Lato"; 
+    line-height: 45px;
+    font-size: 35px;   
+    font-weight: bold;
+    color:#FFF;
+    text-align: center;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 1);
+  }
+
+  button {
+    padding:20px;
+    font-size:25px;
+    background-color: #00d9d9;
+    border:0px;
+    min-width: 290px;
+    font-family: "Lato";
+    color:#FFF;
+    border-radius:50px;
+    -webkit-box-shadow: 3px 18px 72px -19px rgba(0,0,0,0.75);
+    -moz-box-shadow: 3px 18px 72px -19px rgba(0,0,0,0.75);
+    box-shadow: 3px 18px 72px -19px rgba(0,0,0,0.75);
+    transition: all 0.1s ease-in-out; 
+  }
+
+  button:hover {
+    transform: scale(1.1);
+  }
+
+  .action_buttons {
+    margin-top:50px;
+  }
+}
+

@@ -1,24 +1,94 @@
 (function(angular) {
 	'use strict';
 
-	var deeal = angular.module('mydeealModule', ['angucomplete']);
+	var deeal = angular.module('mydeealModule', ['ngRoute']);
+
+    deeal.config(function($routeProvider){
+        $routeProvider
+        .when("/", {
+            templateUrl : "search_result.html" 
+        })
+        .when("/professional/signup", {
+            templateUrl : "professional_signup.html"
+        })
+        .when("/clinic/signup", {
+            templateUrl : "private_clinic.html"
+        })
+        .when("/workister/signup", {
+            templateUrl : "workister_signup.html"
+        });
+    });
 
     deeal.controller('MyDeealController', ['$scope', '$http', '$timeout', function($scope, $http, $timeout) {
 
-        $scope.form = "";
-        $scope.data = [];
-        $scope.email = "";
-        $scope.senha = "";
+        $scope.searchResult = [
+            {
+                nome:"Dr. Márcio Guimarães",
+                especialidade: "Pediatra",
+                endereco: "Av. Dom Helder Camara, 3500",
+                municipio: "Rio de Janeiro",
+                bairro: "Abolição",
+                horariosDisponiveis: [
+                    "08:00",
+                    "09:00",
+                    "13:00",
+                    "15:00",
+                    "17:00"
+                ],
+                horarioEscolhido: ""
+            },
+            {
+                nome:"Dr. Márcio Guimarães",
+                especialidade: "Pediatra",
+                endereco: "Av. Dom Helder Camara, 3500",
+                municipio: "Rio de Janeiro",
+                bairro: "Abolição",
+                horariosDisponiveis: [
+                    "08:00",
+                    "09:00",
+                    "13:00",
+                    "15:00",
+                    "17:00"
+                ],
+                horarioEscolhido: ""
+            },
+            {
+                nome:"Dr. Márcio Guimarães",
+                especialidade: "Pediatra",
+                endereco: "Av. Dom Helder Camara, 3500",
+                municipio: "Rio de Janeiro",
+                bairro: "Abolição",
+                horariosDisponiveis: [
+                    "08:00",
+                    "09:00",
+                    "13:00",
+                    "15:00",
+                    "17:00"
+                ],
+                horarioEscolhido: ""
+            }
+        ];
 
-        $scope.login = function(){
-            if ($scope.email == "cliente@email.com")
-                window.location = "admin.html";
+        $scope.escolherHorario = function(item, horario) {
+            item.horarioEscolhido = horario;
+        }
 
-            if ($scope.email == "conciliador@email.com")
-                window.location = 'admin_conciliador.html'
-
-            if ($scope.email == "submarino@email.com")
-                window.location = 'admin_empresa.html'
+        $scope.confirmarAgendamento = function(item) {
+            console.log(item);
+            swal({
+                    title: "Solicitar o agendamento para o horário de " + item.horarioEscolhido + "?",
+                    text: "",
+                    type: "info",
+                    showCancelButton: true,
+                    confirmButtonColor: "#00d9d9",
+                    confirmButtonText: "Solicitar",
+                    closeOnConfirm: false
+                },
+                function(){
+                    swal("Solicitação enviada!", "Sua solicitação foi enviada. Em breve, você receberá um e-mail com a confirmação do agendamento.", "success");
+                    item.horarioEscolhido = "";
+                }
+            );
         }
 
   }]);
