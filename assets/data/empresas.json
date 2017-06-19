@@ -1,0 +1,26 @@
+[
+  {
+    "razaoSocial":"Ponto Frio",
+    "cnpj":"1234567892"
+  },
+  {
+    "razaoSocial":"Submarino",
+    "cnpj":"7894567822"
+  },
+  {
+    "razaoSocial":"Lojas Americanas",
+    "cnpj":"324567895"
+  },
+  {
+    "razaoSocial":"Casas Bahia",
+    "cnpj":"654782132"
+  },
+  {
+    "razaoSocial":"Leroy Merlin",
+    "cnpj":"253456798"
+  },
+  {
+    "razaoSocial":"Leroy Merlin",
+    "cnpj":"12121212121"
+  }
+]

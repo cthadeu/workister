@@ -1,0 +1,40 @@
+<div class="row">
+    <div class="col-md-12">
+        <h2>Resultado da pesquisa
+            <br /><small>3 Profissionais encontrados</small>
+        </h2>
+        <br />
+        
+    </div>
+</div>
+<div class="row" style="margin-top:20px" >
+    <div class="col-md-4" ng-repeat="result in searchResult">
+        <div class="card-result">
+            <h3>{{result.nome}}
+                <br /><small>{{result.especialidade}}</small>
+            </h3>
+            <hr />                        
+            <div class="media">
+                <div class="media-left">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" style="color:#2e9e9e; fill:currentColor">
+                    <path d="M12 0c-5.522 0-10 4.395-10 9.815 0 5.505 4.375 9.268 10 14.185 5.625-4.917 10-8.68 10-14.185 0-5.42-4.478-9.815-10-9.815zm0 18c-4.419 0-8-3.582-8-8s3.581-8 8-8 8 3.582 8 8-3.581 8-8 8zm5-9.585l-5.708 5.627-3.706-3.627 1.414-1.415 2.291 2.213 4.295-4.213 1.414 1.415z"/>
+                    </svg>
+                </div>
+                <div class="media-body">
+                    {{result.endereco}}<br />
+                    {{result.bairro}} - {{result.municipio}}
+                </div>
+            </div>
+            <hr />
+                <p><strong>Horários Disponíveis</strong></p>                            
+                <div class="row">
+                    <div class="col-sm-2" ng-repeat="horario in result.horariosDisponiveis">
+                        <h4 style="cursor:pointer"><span ng-class="{'label':true, 'label-default': true, 'label-success': result.horarioEscolhido == horario}"  ng-click="escolherHorario(result, horario)" >{{horario}}</span></h4>
+                    </div>
+                </div>                
+                <p style="color:#666;font-size:11px">Selecione um horario e clique em Solicitar Agendamento</p>
+            <hr />
+            <button class="btn btn-info btn-lg btn-block" ng-disabled="result.horarioEscolhido == ''" ng-click="confirmarAgendamento(result)" >Solicitar Agendamento</button>
+        </div>
+    </div>
+</div>          

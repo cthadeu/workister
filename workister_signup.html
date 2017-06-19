@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Workister</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="assets/css/animate.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="assets/css/angucomplete.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="assets/css/sweetalert.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="assets/css/less/style.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="assets/css/workister_signup.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" media="screen" title="no title" charset="utf-8">
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,300,400"/>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Teko' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Exo+2' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Economica' rel='stylesheet' type='text/css'>
+
+    <script src="assets/libs/angular.min.js"></script>
+    <script src="assets/libs/sweetalert.min.js"></script>
+    <script src="assets/libs/angucomplete.js"></script>
+
+
+</head>
+<body  ng-app="mydeealModule" ng-controller="MyDeealController">
+    <nav class="nav navbar-fixed-top nav-deal">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="page-scroll navbar-brand animated fadeInDown" href="index.html">
+                    <img src="assets/img/logo_workister.png" width="180" alt="" />
+                </a>
+            </div>
+            <div id="navbar" class="collapse navbar-collapse animated fadeIn">
+                <ul class="nav navbar-nav pull-right">
+                    <li><a href="javascript:$('#modalLogin').modal('toggle')" >Entrar</a></li>
+                    <li><a href="/result.html#/workister/signup">Cadastre seu serviço</a></li>
+                </ul>
+                
+            </div><!--/.nav-collapse -->
+        </div>
+    </nav>
+
+    <div class="modal wow fadeIn" id="modalLogin" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h3 class="modal-title" id="modalLoginTitle">Login</h3>
+                </div>
+                <div class="modal-body">
+                    
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control" ng-model="email" id="email" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" ng-model="senha" id="pass" placeholder="Senha">
+                        </div>
+                    </form>
+                    <button type="button" class="btn btn-block btn-modal" ng-click="login()">Entrar</button>
+                    <hr>
+                    <p>Não possui conta ? <a href="#">Cadastre-se</a></p>
+                    <button class="btn btn-primary btn-block">Cadastre-se com Facebook</button>
+                    
+                </div>                
+            </div>
+        </div>
+    </div>
+
+    <section id="workister_signup">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</h1>
+            </div>
+        </div> 
+        <br />
+        <br />
+        <div class="row action_buttons">
+            <div class="col-md-6 text-center">
+                <button class="btn btn-default btn-lg" onclick="window.location='/result.html#/clinic/signup'">Clínicas</button>    
+            </div>    
+            <div class="col-md-6 text-center">
+                <button class="btn btn-default btn-lg" onclick="window.location='/result.html#/professional/signup'">Profissionais</button>    
+            </div>
+        </div>   
+    </section>
+    
+    <script src="assets/libs/jquery-1.12.3.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    <script>window.jQuery || document.write('<script src="assets/components/jquery.js"><\/script>');</script>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/scripts.js"></script>
+    <script src="assets/libs/wow.min.js"></script>
+    <script>
+      var wow = new WOW();
+      wow.init();
+    </script>
+</body>
+</html>
+
+
+
+
+
+

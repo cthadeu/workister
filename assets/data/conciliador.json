@@ -1,0 +1,50 @@
+[
+  {
+    "nome":"Fulano de Tal",
+    "registro": "123456",
+    "casosResolvidos":5,
+    "perfil":"Conciliador"
+  },
+  {
+    "nome":"Zé das Couves",
+    "registro": "52879",
+    "casosResolvidos":1,
+    "perfil":"Conciliador"
+  },
+  {
+    "nome":"José da Silva",
+    "registro": "7894",
+    "casosResolvidos":25,
+    "perfil":"Advogado"
+  },
+  {
+    "nome":"Wellington Silva",
+    "registro": "7777",
+    "casosResolvidos":16,
+    "perfil":"Advogado"
+  },
+  {
+    "nome":"Marcus Bignon",
+    "registro": "123456",
+    "casosResolvidos":5,
+    "perfil":"Conciliador"
+  },
+  {
+    "nome":"Maria Duarte",
+    "registro": "52879",
+    "casosResolvidos":1,
+    "perfil":"Conciliador"
+  },
+  {
+    "nome":"Silvio Santos",
+    "registro": "7894",
+    "casosResolvidos":25,
+    "perfil":"Advogado"
+  },
+  {
+    "nome":"Alexandre Ottoni",
+    "registro": "7777",
+    "casosResolvidos":16,
+    "perfil":"Advogado"
+  }
+]
