@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Workister</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="assets/css/animate.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="assets/css/angucomplete.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="assets/css/sweetalert.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="assets/css/less/style.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="assets/css/pages.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" media="screen" title="no title" charset="utf-8">
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,300,400"/>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Teko' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Exo+2' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Economica' rel='stylesheet' type='text/css'>
+
+
+    <script src="assets/libs/angular.min.js"></script>
+    <script src="assets/libs/sweetalert.min.js"></script>
+    <script src="assets/libs/angucomplete.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-route.js"></script>
+
+
+
+</head>
+<body  ng-app="mydeealModule" ng-controller="MyDeealController">
+
+  <nav class="nav nav-deal nav-private">
+      <div class="container">
+          <div class="navbar-header text-center">
+              <a class="page-scroll navbar-brand animated fadeInDown" href="index.html">
+                  <img src="assets/img/logo_workister.png" width="180" alt="" />
+              </a>
+          </div>
+      </div>
+  </nav>
+
+  <div class="fixed-left-menu wow fadeInLeft">
+      <div class="profile-description wow fadeIn">
+        <div class="photo" style="backgroun-image:url(assets/img/bart.gif)"></div>
+        <h4>Bart</h4>
+      </div>
+
+
+        <div class="menu-options wow fadeIn">
+
+          <div class="menu-item" >
+            <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+            <br />
+            <small>Perfil</small>
+          </div>
+
+          <div class="menu-item" >
+            <i class="fa fa-home" aria-hidden="true"></i>
+            <br />
+            <small>Home</small>
+          </div>
+
+          <div class="menu-item">
+            <i class="fa fa-calendar" aria-hidden="true"></i>
+            <br />
+            <small>Agenda</small>
+          </div>
+
+          <div class="menu-item">
+            <i class="fa fa-sign-out" aria-hidden="true"></i>
+            <br />
+            <small>Sair</small>
+          </div>
+
+
+      </div>
+  </div>
+
+  <div class="container">
+
+    <div class="row comming-soon">
+        <div class="col-md-12 ">
+          <h3>Próximas consultas agendadas</h3>
+        </div>
+        <div class="col-md-12 last-scheduled-itens">
+              <div class="scheduled-item">
+                  <div class="day">
+                    <h3>15<br /><small>JUL</small></h3>
+                  </div>
+                  <div class="description">
+                    <h4>Dr. Márcio Guimarães
+                      <br /><small>Pediatra</small>
+                    </h4>
+                  </div>
+              </div>
+
+              <div class="scheduled-item">
+                  <div class="day">
+                    <h3>20<br /><small>OUT</small></h3>
+                  </div>
+                  <div class="description">
+                    <h4>Dra. Aline Costa
+                      <br /><small>Oftamologista</small>
+                    </h4>
+                  </div>
+              </div>
+
+              <div class="scheduled-item">
+                  <div class="day">
+                    <h3>11<br /><small>DEZ</small></h3>
+                  </div>
+                  <div class="description">
+                    <h4>Dr. Alexandre Silva
+                      <br /><small>Otorrinolaringologista</small>
+                    </h4>
+                  </div>
+              </div>
+
+            </div>
+
+    </div>
+
+    <div class="row search-bar">
+        <div class="col-md-12 ">
+          <hr style="border-color:#FFF;" />
+
+
+            <h4>Agendar nova consulta</h4>
+              <div class="search_box animated fadeIn">
+                  <div class="row">
+                        <div class="col-xs-5">
+                            <input type="text" class="form-control input-lg" placeholder="Qual especialidade você precisa ?" />
+                        </div>
+                        <div class="col-xs-3" style="border-left:1px solid #b3dada;">
+                            <input type="text" class="form-control input-lg" placeholder="Qual município ?" />
+                        </div>
+                        <div class="col-xs-2" style="border-left:1px solid #b3dada;">
+                            <input type="text" class="form-control input-lg" placeholder="Qual bairro ?" />
+                        </div>
+                        <div class="col-xs-2">
+                            <button class="btn btn-info btn-lg btn-block" onclick="window.location='result.html'"><i class="fa fa-search" aria-hidden="true"></i> Buscar</button>
+                        </div>
+                  </div>
+
+              </div>
+          
+        </div>
+    </div>
+
+  </div>
+
+
+
+
+
+    <script src="assets/libs/jquery-1.12.3.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    <script>window.jQuery || document.write('<script src="assets/components/jquery.js"><\/script>');</script>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/scripts.js"></script>
+    <script src="assets/libs/wow.min.js"></script>
+    <script>
+      var wow = new WOW();
+      wow.init();
+    </script>
+</body>
+</html>
